@@ -2,6 +2,8 @@ package ru.rickSanchez.company.class_work_1;
 
 import java.awt.Graphics;
 
+import javafx.scene.layout.Background;
+
 public abstract class Sprite {
     protected float x;
     protected float y;

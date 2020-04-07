@@ -3,6 +3,8 @@ package ru.rickSanchez.company.class_work_1;
 import java.awt.Color;
 import java.awt.Graphics;
 
+import javafx.scene.layout.Background;
+
 public class Ball extends Sprite{
 
     private final Color color = new Color(
@@ -17,6 +19,12 @@ public class Ball extends Sprite{
     public Ball() {
         halfHeight = 20 + (float)(Math.random() * 50f);
         halfWidth = halfHeight;
+    }
+
+    public Ball(int x, int y){
+        this();
+        this.x = x;
+        this.y = y;
     }
 
     @Override
@@ -47,6 +55,4 @@ public class Ball extends Sprite{
         g.setColor(color);
         g.fillOval((int) getLeft(), (int) getTop(), (int) getWidth(), (int) getHeight());
     }
-
-
 }

@@ -1,10 +1,16 @@
 package ru.rickSanchez.company.class_work_1;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
 public class GameCanvas extends JPanel {
+    private final Color color = new Color(
+            (int)(Math.random() * 255),
+            (int)(Math.random() * 255),
+            (int)(Math.random() * 255)
+    );
 
     MainCircles listener;
     long lastFrameTime;
